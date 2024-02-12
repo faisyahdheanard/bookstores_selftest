@@ -1,0 +1,2889 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 9, 2024 06:04:27 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@PRF</a><a class="dropdown-item" href="#">@PRF04</a><a class="dropdown-item" href="#">@LGN01</a><a class="dropdown-item" href="#">@PRF05</a><a class="dropdown-item" href="#">@PRF10</a><a class="dropdown-item" href="#">@LGN02</a><a class="dropdown-item" href="#">@PRF07</a><a class="dropdown-item" href="#">@CLC</a><a class="dropdown-item" href="#">@CLC02</a><a class="dropdown-item" href="#">@PRF08</a><a class="dropdown-item" href="#">@PRF09</a><a class="dropdown-item" href="#">@PRF06</a><a class="dropdown-item" href="#">@PRF01</a><a class="dropdown-item" href="#">@PRF11</a><a class="dropdown-item" href="#">@PRF02</a><a class="dropdown-item" href="#">@PRF03</a><a class="dropdown-item" href="#">@LGN03</a><a class="dropdown-item" href="#">@LGN</a><a class="dropdown-item" href="#">@CLC01</a><a class="dropdown-item" href="#">@LGN06</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login</p>
+            <p class="text-sm">
+              <span>6:04:28 PM</span> / <span>00:05:02:435</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login</h5>
+<span class='badge badge-success'>02.09.2024 6:04:28 PM</span>
+<span class='badge badge-danger'>02.09.2024 6:09:30 PM</span>
+<span class='badge badge-default'>00:05:02:435</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Successfully logged in using valid account</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.clickLoginMenu()">
+                <span>When Click Login menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.inputUserNameAndPasswordFieldsWithValidData()">
+                <span>When Input UserName and Password fields with valid data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.clickLoginButton()">
+                <span>And Click Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.usernameIsVisibleInProfilePage()">
+                <span>Then Username is visible in Profile page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Successfully logged in with unregistered account</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.clickLoginMenu()">
+                <span>When Click Login menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.inputUserNameAndPasswordFieldsWithUnregisteredAccount()">
+                <span>When Input UserName and Password fields with unregistered account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.clickLoginButton()">
+                <span>And Click Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.errorMessageIsDisplayedSaying(java.lang.String)">
+                <span>Then Error message is displayed saying "Invalid username or password!"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Ensure signed in is failed in several empty test scenarios</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Ensure signed in is failed in several empty test scenarios</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to the website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click Login menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Input UserName and Password fields with invalid "EmptyUserPass" data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Failed to sign in</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Ensure signed in is failed in several empty test scenarios</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to the website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click Login menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Input UserName and Password fields with invalid "EmptyUsername" data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Failed to sign in</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Ensure signed in is failed in several empty test scenarios</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to the website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click Login menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Input UserName and Password fields with invalid "EmptyPassword" data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Failed to sign in</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log fail-bg mr-2">Fail</span>Ensure error message is displayed in several test scenario</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Ensure error message is displayed in several test scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to the website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click Login menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Input UserName and Password fields with invalid "InvalidUsername" data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Error message is displayed saying "Invalid username or password!"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>Ensure error message is displayed in several test scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to the website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click Login menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Input UserName and Password fields with invalid "InvalidPassword" data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Error message is displayed saying "Invalid username or password!"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="53"><span class="badge log fail-bg mr-2">Fail</span>Ensure error message is displayed in several test scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to the website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click Login menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Input UserName and Password fields with invalid "ValidWithSpace" data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then Error message is displayed saying "Invalid username or password!"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Invalid username or password!') to be present in element Proxy element for: DefaultElementLocator 'By.cssSelector: #name' (tried for 70 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at helpers.assertions.shouldContains(assertions.java:27)
+	at pages.loginPage.validateErrorMessageAppear(loginPage.java:44)
+	at steps.loginStep.errorMessageIsDisplayedSaying(loginStep.java:45)
+	at ✽.Error message is displayed saying "Invalid username or password!"(file:///Users/faishyahdheanardgmail.com/AquaProjects/bookstore_selftest/src/test/resources/features/01.%20login.feature:50)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#name"}
+  (Session info: chrome=121.0.6167.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9c53685d5f76e521cbfd184cd86e18a, findElement {using=css selector, value=#name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/mh/1rwgq9vd2f9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9c53685d5f76e521cbfd184cd86e18a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy28.getText(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:343)
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:339)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at helpers.assertions.shouldContains(assertions.java:27)
+	at pages.loginPage.validateErrorMessageAppear(loginPage.java:44)
+	at steps.loginStep.errorMessageIsDisplayedSaying(loginStep.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Collection</p>
+            <p class="text-sm">
+              <span>6:09:30 PM</span> / <span>00:02:25:745</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Collection</h5>
+<span class='badge badge-success'>02.09.2024 6:09:30 PM</span>
+<span class='badge badge-danger'>02.09.2024 6:11:56 PM</span>
+<span class='badge badge-default'>00:02:25:745</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>Successfully added book to the collection</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>When Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>And Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickTitle(java.lang.String)">
+                <span>And Click "Git Pocket Guide" title</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickAddToYourCollectionButton()">
+                <span>And Click Add to your collection button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.popUpAlertIsDisplayedSaying(java.lang.String)">
+                <span>Then Pop-up alert is displayed saying "Book added to your collection."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>When Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.theseBookWillAppear(java.util.List<java.lang.String>)">
+                <span>Then The following book should appear:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Successfully added the same book to the collection</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>When Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickTitle(java.lang.String)">
+                <span>When Click "Git Pocket Guide" title</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickAddToYourCollectionButton()">
+                <span>And Click Add to your collection button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.popUpAlertIsDisplayedSaying(java.lang.String)">
+                <span>Then Pop-up alert is displayed saying "Book already present in the your collection!"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.theBookDeleted()">
+                <span>And The book will be deleted for testing purposes</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="81"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Profile</p>
+            <p class="text-sm">
+              <span>6:11:57 PM</span> / <span>00:24:16:529</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Profile</h5>
+<span class='badge badge-success'>02.09.2024 6:11:57 PM</span>
+<span class='badge badge-danger'>02.09.2024 6:36:13 PM</span>
+<span class='badge badge-default'>00:24:16:529</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=81</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>Ensure there is no profile visible when not logged in</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.displayedAMessageGuidingTheUserToLogInOrRegisterBeforeAccessingProfileInformation()">
+                <span>And Displayed a message guiding the user to log in or register before accessing profile information</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>Validation of the Previous and Next buttons is functioning</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.addTheFollowingBooksToTheCollection(java.util.List<java.lang.String>)">
+                <span>When Add the following books to the collection:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr><tr><td>Speaking JavaScript</td></tr><tr><td>You Don't Know JS</td></tr><tr><td>Programming JavaScript Applications</td></tr><tr><td>Eloquent JavaScript, Second Edition</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>And Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickNextButton()">
+                <span>And Click Next button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.theseBookWillAppear(java.util.List<java.lang.String>)">
+                <span>Then The following book should appear:</span>
+      <div><table class='markup-table table '><tr><td>Eloquent JavaScript, Second Edition</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickPreviousButton()">
+                <span>When Click Previous button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.theseBookWillAppear(java.util.List<java.lang.String>)">
+                <span>Then The following book should appear:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr><tr><td>Speaking JavaScript</td></tr><tr><td>You Don't Know JS</td></tr><tr><td>Programming JavaScript Applications</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickNextButton()">
+                <span>When Click Next button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.allBooksWillBeDeletedForTestingPurposes()">
+                <span>And All books will be deleted for testing purposes</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Validation of the Search feature is functioning</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.addTheFollowingBooksToTheCollection(java.util.List<java.lang.String>)">
+                <span>When Add the following books to the collection:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>And Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.inputInSearchBox(java.lang.String)">
+                <span>When Input "Git Pocket Guide" in search box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.theseBookWillAppear(java.util.List<java.lang.String>)">
+                <span>Then The following book should appear:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.allBooksWillBeDeletedForTestingPurposes()">
+                <span>And All books will be deleted for testing purposes</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>Validation of the jump to page feature is functioning</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.addTheFollowingBooksToTheCollection(java.util.List<java.lang.String>)">
+                <span>When Add the following books to the collection:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr><tr><td>Speaking JavaScript</td></tr><tr><td>You Don't Know JS</td></tr><tr><td>Programming JavaScript Applications</td></tr><tr><td>Eloquent JavaScript, Second Edition</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>And Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.inputInPageBox(java.lang.String)">
+                <span>When Input "2" in page box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.theseBookWillAppear(java.util.List<java.lang.String>)">
+                <span>Then The following book should appear:</span>
+      <div><table class='markup-table table '><tr><td>Eloquent JavaScript, Second Edition</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.allBooksWillBeDeletedForTestingPurposes()">
+                <span>And All books will be deleted for testing purposes</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="122"><span class="badge log pass-bg mr-2">Pass</span>Validation of the row selection is functioning</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.addTheFollowingBooksToTheCollection(java.util.List<java.lang.String>)">
+                <span>When Add the following books to the collection:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr><tr><td>Speaking JavaScript</td></tr><tr><td>You Don't Know JS</td></tr><tr><td>Programming JavaScript Applications</td></tr><tr><td>Eloquent JavaScript, Second Edition</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>And Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.selectDropdown(java.lang.String)">
+                <span>When Select "10" dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.theseBookWillAppear(java.util.List<java.lang.String>)">
+                <span>Then The following book should appear:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr><tr><td>Speaking JavaScript</td></tr><tr><td>You Don't Know JS</td></tr><tr><td>Programming JavaScript Applications</td></tr><tr><td>Eloquent JavaScript, Second Edition</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.selectDropdown(java.lang.String)">
+                <span>When Select "5" dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickNextButton()">
+                <span>And Click Next button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.allBooksWillBeDeletedForTestingPurposes()">
+                <span>And All books will be deleted for testing purposes</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>Successfully removed a book</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.addTheFollowingBooksToTheCollection(java.util.List<java.lang.String>)">
+                <span>When Add the following books to the collection:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>And Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickRemoveButton()">
+                <span>And Click Remove button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickOKButton()">
+                <span>And Click OK button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.popUpAlertIsDisplayedSaying(java.lang.String)">
+                <span>Then Pop-up alert is displayed saying "Book deleted."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.bookHasBeenDeletedAlert(java.util.List<java.lang.String>)">
+                <span>And The following book has been deleted:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="147"><span class="badge log pass-bg mr-2">Pass</span>Successfully removed all books (one book)</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.addTheFollowingBooksToTheCollection(java.util.List<java.lang.String>)">
+                <span>When Add the following books to the collection:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>And Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickDeleteAllBooksButton()">
+                <span>And Click Delete All Books button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickOKButton()">
+                <span>And Click OK button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.popUpAlertIsDisplayedSaying(java.lang.String)">
+                <span>Then Pop-up alert is displayed saying "All Books deleted."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.bookHasBeenDeletedAlert(java.util.List<java.lang.String>)">
+                <span>And The following book has been deleted:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="159"><span class="badge log pass-bg mr-2">Pass</span>Ensure error message is displayed when there are no books to delete</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickDeleteAllBooksButton()">
+                <span>When Click Delete All Books button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickOKButton()">
+                <span>And Click OK button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.popUpAlertIsDisplayedSaying(java.lang.String)">
+                <span>Then Pop-up alert is displayed saying "No books available in your's collection!"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="165"><span class="badge log fail-bg mr-2">Fail</span>Successfully removed all books (five books)</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.clickBookStoreMenu()">
+                <span>When Click Go To Book Store button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Book Store" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.collectionStep.addTheFollowingBooksToTheCollection(java.util.List<java.lang.String>)">
+                <span>When Add the following books to the collection:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr><tr><td>Speaking JavaScript</td></tr><tr><td>You Don't Know JS</td></tr><tr><td>Programming JavaScript Applications</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickProfileMenu()">
+                <span>And Click Profile menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Profile" page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="steps.profileStep.clickDeleteAllBooksButton()">
+                <span>And Click Delete All Books button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="submit" type="button" class="btn btn-primary">...</button> is not clickable at point (984, 722). Other element would receive the click: <iframe frameborder="0" src="https://1df5b464151c1bd2b48ed1c8540e4b81.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
+  (Session info: chrome=121.0.6167.160)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [431632360b423650e12c1d62bee53ff2, clickElement {id=8ABA215518372F221AFAAB9F82BB8025_element_292}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/mh/1rwgq9vd2f9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59998}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (431632360b423650e12c1d62bee53ff2)] -> xpath: //div[@class="mt-2 buttonWrap row"]/div[3]/button]
+Session ID: 431632360b423650e12c1d62bee53ff2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy3/jdk.proxy3.$Proxy28.click(Unknown Source)
+	at pages.profilePage.clickDeleteAllBooksButton(profilePage.java:109)
+	at steps.profileStep.clickDeleteAllBooksButton(profileStep.java:92)
+	at ✽.Click Delete All Books button(file:///Users/faishyahdheanardgmail.com/AquaProjects/bookstore_selftest/src/test/resources/features/03.%20profile.feature:157)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="steps.profileStep.clickOKButton()">
+                <span>And Click OK button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="steps.commonStep.popUpAlertIsDisplayedSaying(java.lang.String)">
+                <span>Then Pop-up alert is displayed saying "All Books deleted."</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="steps.profileStep.bookHasBeenDeletedAlert(java.util.List<java.lang.String>)">
+                <span>And The following book has been deleted:</span>
+      <div><table class='markup-table table '><tr><td>Git Pocket Guide</td></tr><tr><td>Learning JavaScript Design Patterns</td></tr><tr><td>Speaking JavaScript</td></tr><tr><td>You Don't Know JS</td></tr><tr><td>Programming JavaScript Applications</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="177"><span class="badge log fail-bg mr-2">Fail</span>[TEST PURPOSES NEEDED] Manually delete the entire book collection due to the failure of the preceding scenario.</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="steps.profileStep.removedAllBookCollections()">
+                <span>And Removed all book collections</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button id="submit" type="button" class="btn btn-primary">...</button> is not clickable at point (984, 666). Other element would receive the click: <iframe frameborder="0" src="https://cb9c5f55343d38c1a0f42a6c648f79d8.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
+  (Session info: chrome=121.0.6167.160)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38da1691f5d15841e6b806fc8cab21c3, clickElement {id=541384746548FF73DE410D10DB349F0C_element_142}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/mh/1rwgq9vd2f9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60230}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (38da1691f5d15841e6b806fc8cab21c3)] -> xpath: //div[@class="mt-2 buttonWrap row"]/div[3]/button]
+Session ID: 38da1691f5d15841e6b806fc8cab21c3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy3/jdk.proxy3.$Proxy28.click(Unknown Source)
+	at pages.profilePage.clickDeleteAllBooksButton(profilePage.java:109)
+	at pages.profilePage.removedAllBookCollectionsPerOne(profilePage.java:147)
+	at steps.profileStep.removedAllBookCollections(profileStep.java:126)
+	at ✽.Removed all book collections(file:///Users/faishyahdheanardgmail.com/AquaProjects/bookstore_selftest/src/test/resources/features/03.%20profile.feature:169)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="181"><span class="badge log pass-bg mr-2">Pass</span>Successfully logged out</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickLogOutButton()">
+                <span>When Click Log out button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>Then The "Login" page is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="186"><span class="badge log pass-bg mr-2">Pass</span>Successfully deleted the account</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.loginStep.navigateToTheWebsite()">
+                <span>Given Navigate to the website</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.loginStep.alreadyLoggedInAndOnTheProfilePage()">
+                <span>And Already logged in and on the Profile page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickDeleteAccountButton()">
+                <span>When Click Delete Account button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.profileStep.clickOKButton()">
+                <span>When Click OK button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.popUpAlertIsDisplayedSaying(java.lang.String)">
+                <span>Then Pop-up alert is displayed saying "User Deleted."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.commonStep.thePageIsDisplayed(java.lang.String)">
+                <span>And The "Login" page is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:32:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='173'>And Click Delete All Books button</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully removed all books (five books).And Click Delete All Books button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:34:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='180'>And Removed all book collections</a>
+<div class="">
+<span class="badge badge-default">Profile.[TEST PURPOSES NEEDED] Manually delete the entire book collection due to the failure of the preceding scenario..And Removed all book collections</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:08:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>Then Error message is displayed saying "Invalid username or password!"</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario.Then Error message is displayed saying "Invalid username or password!"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">20</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@PRF</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='82'>Ensure there is no profile visible when not logged in</a>
+<div class="">
+<span class="badge badge-default">Profile.Ensure there is no profile visible when not logged in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='86'>Validation of the Previous and Next buttons is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the Previous and Next buttons is functioning</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:15:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='100'>Validation of the Search feature is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the Search feature is functioning</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='111'>Validation of the jump to page feature is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the jump to page feature is functioning</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:20:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='122'>Validation of the row selection is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the row selection is functioning</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:25:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='135'>Successfully removed a book</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully removed a book</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='147'>Successfully removed all books (one book)</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully removed all books (one book)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:29:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='159'>Ensure error message is displayed when there are no books to delete</a>
+<div class="">
+<span class="badge badge-default">Profile.Ensure error message is displayed when there are no books to delete</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:30:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='165'>Successfully removed all books (five books)</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully removed all books (five books)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:32:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='177'>[TEST PURPOSES NEEDED] Manually delete the entire book collection due to the failure of the preceding scenario.</a>
+<div class="">
+<span class="badge badge-default">Profile.[TEST PURPOSES NEEDED] Manually delete the entire book collection due to the failure of the preceding scenario.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='181'>Successfully logged out</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully logged out</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='186'>Successfully deleted the account</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully deleted the account</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF04</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF04</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:17:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='111'>Validation of the jump to page feature is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the jump to page feature is functioning</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@LGN01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LGN01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:04:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successfully logged in using valid account</a>
+<div class="">
+<span class="badge badge-default">Login.Successfully logged in using valid account</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF05</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF05</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:20:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='122'>Validation of the row selection is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the row selection is functioning</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF10</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF10</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='181'>Successfully logged out</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully logged out</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@LGN02</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LGN02</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:05:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:05:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:06:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:06:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF07</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF07</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:26:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='147'>Successfully removed all books (one book)</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully removed all books (one book)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@CLC</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CLC</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:09:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='61'>Successfully added book to the collection</a>
+<div class="">
+<span class="badge badge-default">Collection.Successfully added book to the collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:10:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='72'>Successfully added the same book to the collection</a>
+<div class="">
+<span class="badge badge-default">Collection.Successfully added the same book to the collection</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CLC02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CLC02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:10:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='72'>Successfully added the same book to the collection</a>
+<div class="">
+<span class="badge badge-default">Collection.Successfully added the same book to the collection</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF08</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF08</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:29:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='159'>Ensure error message is displayed when there are no books to delete</a>
+<div class="">
+<span class="badge badge-default">Profile.Ensure error message is displayed when there are no books to delete</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@PRF09</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF09</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:30:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='165'>Successfully removed all books (five books)</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully removed all books (five books)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF06</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF06</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:25:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='135'>Successfully removed a book</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully removed a book</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='82'>Ensure there is no profile visible when not logged in</a>
+<div class="">
+<span class="badge badge-default">Profile.Ensure there is no profile visible when not logged in</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF11</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF11</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:35:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='186'>Successfully deleted the account</a>
+<div class="">
+<span class="badge badge-default">Profile.Successfully deleted the account</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='86'>Validation of the Previous and Next buttons is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the Previous and Next buttons is functioning</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@PRF03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PRF03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:15:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='81' id='100'>Validation of the Search feature is functioning</a>
+<div class="">
+<span class="badge badge-default">Profile.Validation of the Search feature is functioning</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@LGN03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LGN03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:04:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Successfully logged in with unregistered account</a>
+<div class="">
+<span class="badge badge-default">Login.Successfully logged in with unregistered account</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@LGN</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LGN</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:04:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successfully logged in using valid account</a>
+<div class="">
+<span class="badge badge-default">Login.Successfully logged in using valid account</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:04:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Successfully logged in with unregistered account</a>
+<div class="">
+<span class="badge badge-default">Login.Successfully logged in with unregistered account</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:05:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:05:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:06:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:06:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>Ensure signed in is failed in several empty test scenarios</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure signed in is failed in several empty test scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:07:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:07:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:07:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:07:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@CLC01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CLC01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:09:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='61'>Successfully added book to the collection</a>
+<div class="">
+<span class="badge badge-default">Collection.Successfully added book to the collection</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@LGN06</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LGN06</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:07:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:07:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:07:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:07:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Ensure error message is displayed in several test scenario</a>
+<div class="">
+<span class="badge badge-default">Login.Ensure error message is displayed in several test scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 9, 2024 06:04:27 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 9, 2024 06:36:13 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='66%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='86%'><b>19</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='13%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='96%'><b>159</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>3</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login":302.435,"Collection":145.745,"Profile":1456.529
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@PRF</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>83.333%</td>
+</tr>
+<tr>
+<td>@PRF04</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LGN01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF05</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LGN02</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF07</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CLC</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CLC02</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF08</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF09</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@PRF06</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF02</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PRF03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LGN03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LGN</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>@CLC01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LGN06</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 19,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 159,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
